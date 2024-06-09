@@ -15,8 +15,10 @@
 1. [:fire:技術選定](#技術選定)
     1. クラウドインフラ
         1. [クラウド基盤共通](#技術選定クラウドインフラクラウド基盤共通)
+<!--
         1. [サーバレス環境](#技術選定クラウドインフラサーバレス環境)
         1. [データ分析基盤](#技術選定クラウドインフラデータ分析基盤)
+-->
     1. [開発ツール](#技術選定開発ツール)
     1. [バックエンド](#技術選定バックエンド)
     1. [フロントエンド](#技術選定フロントエンド)
@@ -37,29 +39,34 @@
 # :fire:技術選定
 ## 技術選定／クラウドインフラ
 ### 技術選定／クラウドインフラ／クラウド基盤共通
-+ IaC）  Terraform Cloud
++ IaC）
+  - Terraform Cloud
   
-+ 管理コンソールから作成・有効化したサービス・機能）  AWS IAM(管理ユーザ作成のみ), Amazon Route 53(ドメイン登録のみ), 
++ 管理コンソールから作成・有効化したサービス・機能）
+  - AWS IAM(管理ユーザ作成のみ), Amazon Route 53(ドメイン登録のみ), 
   
-+ IaCで作成したサービス・機能）  
-  Amazon ECR, Amazon ECS(AWS Fargate, AWS Auto Scaling), Elastic Load Balancing(ALB), Amazon VPC(IPv4), Amazon S3, Amazon RDS, Amazon CloudWatch Logs, AWS IAM, AWS Systems Manager(ECSExec, DB password), Amazon Route 53, AWS Certificate Manager, Amazon CloudFront, 
++ IaCで作成したサービス・機能）
+  - Web app)
+    - Amazon ECR, Amazon ECS(AWS Fargate, AWS Auto Scaling), Elastic Load Balancing(ALB), Amazon VPC(IPv4), Amazon S3, Amazon RDS, Amazon Route 53, Amazon CloudFront, 
+  - セキュリティ・ログ・その他)
+    - Amazon CloudWatch Logs, AWS IAM, AWS Systems Manager(ECSExec, DB password), AWS Certificate Manager, 
   
-+ 初期設定で有効化されているサービス・機能）  
++ 初期設定で有効化されているサービス・機能）
+  - コスト管理サービス・機能）
+    - AWS billing Alarms, AWS Budget, AWS Cost Explorer, 
   
-+ その他コスト管理サービス・機能）  
-  AWS billing Alarms, AWS Budget, AWS Cost Explorer, 
-
-
 <!-- 
-+ IaCで作成したサービス・機能） WAF, VPC Flow Logs, AWS Config, KMS, Athena, Amazon Inspector, Guard Duty, 
++ IaCで作成したサービス・機能） WAF, VPC Flow Logs, AWS Config, KMS, Athena, Amazon Inspector, Guard Duty, Config, Security Hub, GuardDuty, Macie, Detective, Network Firewall, 
 + 初期設定で有効化されているサービス・機能）  CloudTrail, AWS Shield Standard, AWS Health Dashboard,
 -->
   
+<!--
 ### 技術選定／クラウドインフラ／サーバレス環境
 + Python 3.11.5 (サーバレス環境およびデータ分析基盤の構築用)
   
-### 技術選定／クラウドインフラ／データ分析基盤
   
+### 技術選定／クラウドインフラ／データ分析基盤
+-->
   
 ## 技術選定／開発ツール
 + Docker Desktop 4.25.0
@@ -72,13 +79,17 @@
 + Laravel 10.22.0  
   
 ## 技術選定／フロントエンド
+<!-- 
 + Bootstrap（下記生成AIにより、95%以上を自動生成）
 + HTML/CSS（下記生成AIにより、95%以上を自動生成）
+-->
   
 ## 技術選定／生成AI（動画・静止画・コード生成）
+<!-- 
 + Creative Reality Studio（写真とテキストを入力し、しゃべるアバター動画を出力するAI。トップページの動画を生成）
 + DiffusionBee（favicon.icoを生成。テキストを入力し、画像を出力するAI。）
 + ChatGPT（version4）　HTML/CSS/Bootstrapを生成
+-->
   
   
 ---------------------------------------
@@ -93,15 +104,20 @@
   
 ## 基本設計／アプリケーション（簡易版）
 ### 基本設計／アプリケーション／実装機能（バックエンド）
+現状初期設定完了
+<!-- 
 + CRUD機能
 + 検索機能
 + ページネーション機能
 + バリデーション
 + ユーザー登録、ログイン
+-->
   
 ## 基本設計／データベース
+<!--
 + テーブル設計（簡易版）  
 ER図  
+-->
   
 ---------------------------------------
 # :fire:その他
